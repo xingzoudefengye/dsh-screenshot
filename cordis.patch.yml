@@ -15,9 +15,9 @@
         # System-wide shortcut. Carbon accelerators: `ctrl` / `alt` / `shift` /
         # `cmd` (or `primary` for cmd) joined with `+`, then one letter.
         hotkey: 'ctrl+alt+a'
-        # Where captures go. `~` is expanded.
-        directory: '~/Pictures/DSH Screenshots'
-        # Put every capture on the clipboard so ⌘V pastes it immediately.
+        # Every capture goes straight to the clipboard so ⌘V pastes it.
         copyToClipboard: true
+        # Do not keep the file: it is written to a temp dir, copied, deleted.
+        keepFile: false
         # Silent by default: no banner, no chime. Opt in with `true`.
         notify: false
