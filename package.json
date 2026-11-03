@@ -1,0 +1,24 @@
+{
+  "name": "dsh-screenshot",
+  "version": "0.1.0",
+  "description": "Minimal macOS screenshot plugin for DeepSeek Harness: a system-wide hotkey for region capture, plus a screenshot tool the agent can call.",
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": ["lib", "bin", "cordis.patch.yml", "README.md"],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" }
+  },
+  "engines": { "node": ">=22" },
+  "peerDependencies": { "@deepseek-ai/cordis": "*", "@deepseek-ai/dsh-tools": "*", "@deepseek-ai/schemastery": "*" },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/cordis": { "optional": true },
+    "@deepseek-ai/dsh-tools": { "optional": true },
+    "@deepseek-ai/schemastery": { "optional": true }
+  }
+}

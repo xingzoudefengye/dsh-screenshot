@@ -1,0 +1,19 @@
+# dsh-screenshot bundle patch.
+#
+# One host-plane row: a system-wide screenshot hotkey plus a `screenshot` tool.
+# Nothing is registered on the browser side, so this plugin cannot affect the
+# Web shell's UI bootstrap.
+#
+# Every value is overridable from a later layer (the profile's
+# `cordis.patch.yml`); a patch replaces a row's whole `config`, so restate every
+# key you need.
+
+- insert:
+    - id: screenshot
+      name: 'dsh-screenshot'
+      config:
+        # System-wide shortcut. Carbon accelerators: `ctrl` / `alt` / `shift` /
+        # `cmd` (or `primary` for cmd) joined with `+`, then one letter.
+        hotkey: 'ctrl+alt+a'
+        # Where captures go. `~` is expanded.
+        directory: '~/Pictures/DSH Screenshots'
