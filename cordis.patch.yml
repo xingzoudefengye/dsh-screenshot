@@ -17,3 +17,7 @@
         hotkey: 'ctrl+alt+a'
         # Where captures go. `~` is expanded.
         directory: '~/Pictures/DSH Screenshots'
+        # Put every capture on the clipboard so ⌘V pastes it immediately.
+        copyToClipboard: true
+        # Show a notification naming the saved file.
+        notify: true
