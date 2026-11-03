@@ -19,5 +19,5 @@
         directory: '~/Pictures/DSH Screenshots'
         # Put every capture on the clipboard so ⌘V pastes it immediately.
         copyToClipboard: true
-        # Show a notification naming the saved file.
-        notify: true
+        # Silent by default: no banner, no chime. Opt in with `true`.
+        notify: false
