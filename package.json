@@ -1,7 +1,7 @@
 {
   "name": "dsh-screenshot",
   "version": "0.1.0",
-  "description": "Minimal macOS screenshot plugin for DeepSeek Harness: a system-wide hotkey for region capture, plus a screenshot tool the agent can call.",
+  "description": "极简 macOS 截图插件：全局快捷键框选截图，图片直接进剪贴板、用完即删，不占磁盘。",
   "license": "MIT",
   "type": "module",
   "main": "lib/index.js",
